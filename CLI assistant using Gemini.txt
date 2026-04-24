@@ -1,0 +1,25 @@
+CLI assistant using Gemini:
+
+python -m venv .venv - to create virtual environment using python -> creates .venv folder in the project
+
+To activate that virtual environment, run .venv\Scripts\activate (Windows)
+Since we are using Git Bash (which behaves like a Linux shell), use "source .venv/Scripts/activate"
+
+Run "deactivate" once done.
+
+Note: To check that you are indeed using the python interpreter inside .venv folder, run "which python" and "which pip" which will display the respective paths.
+
+"which python" -> Smart-CLI-assistant/.venv/Scripts/python
+"which pip" -> Smart-CLI-assistant/.venv/Scripts/pip
+
+Now do: pip install google-genai
+
+In order to recognize .env file contents,
+
+pip install python-dotenv
+
+from dotenv import load_dotenv
+load_dotenv()
+
+Create an empty file __init__.py which tells Python that "this is a package"
+Then run main.py using "python -m app.main"
